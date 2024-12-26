@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Enrollments</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Manage Enrollments</h1>
+    </header>
+
+    <section class="form-section">
+        <h2>Add Enrollment</h2>
+        <form id="add-enrollment-form">
+            <label for="enrollmentStudentID">Student ID</label>
+            <input type="text" id="enrollmentStudentID" name="enrollmentStudentID" required>
+            <label for="enrollmentCourseID">Course ID</label>
+            <input type="text" id="enrollmentCourseID" name="enrollmentCourseID" required>
+            <label for="enrollmentSemester">Semester</label>
+            <input type="text" id="enrollmentSemester" name="enrollmentSemester" required>
+            <button type="submit">Add Enrollment</button>
+        </form>
+        <div id="enrollments-results"></div>
+    </section>
+
+    <section class="form-section">
+        <h2>Modify Enrollment</h2>
+        <form id="modify-enrollment-form">
+            <label for="modifyEnrollmentStudentID">Student ID</label>
+            <input type="text" id="modifyEnrollmentStudentID" name="modifyEnrollmentStudentID" required>
+              <label for="modifyEnrollmentCourseID">Course ID</label>
+              <input type="text" id="modifyEnrollmentCourseID" name="modifyEnrollmentCourseID" required>
+            <label for="modifyEnrollmentSemester">New Semester</label>
+            <input type="text" id="modifyEnrollmentSemester" name="modifyEnrollmentSemester">
+            <button type="submit">Modify Enrollment</button>
+        </form>
+    </section>
+
+    <section class="form-section">
+        <h2>Delete Enrollment</h2>
+        <form id="delete-enrollment-form">
+            <label for="deleteEnrollmentStudentID">Student ID</label>
+            <input type="text" id="deleteEnrollmentStudentID" name="deleteEnrollmentStudentID" required>
+            <label for="deleteEnrollmentCourseID">Course ID</label>
+            <input type="text" id="deleteEnrollmentCourseID" name="deleteEnrollmentCourseID" required>
+            
+            <button type="submit">Delete Enrollment</button>
+        </form>
+    </section>
+
+    <section class="form-section">
+           <h2>Display All Data</h2>
+           <!-- Display All Entities Button -->
+           <button id="display-all-btn">Display All Data</button>
+        
+           <!-- Result Div for All Entities -->
+           <div id="students-results"></div>
+           <div id="teachers-results"></div>
+           <div id="courses-results"></div>
+           <div id="enrollments-results"></div>
+           <div id="grades-results"></div>
+           <div id="schedules-results"></div>
+           <div id="faculties-results"></div>
+           <div id="departments-results"></div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>

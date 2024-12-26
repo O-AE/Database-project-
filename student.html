@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Students</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Manage Students</h1>
+    </header>
+
+    <section class="form-section">
+        <h2>Add Student</h2>
+        <form id="add-student-form">
+            <label for="studentID">Student ID</label>
+            <input type="text" id="studentID" name="studentID" required>
+            <label for="studentName">Student Name</label>
+            <input type="text" id="studentName" name="studentName" required>
+            <label for="studentDepartmentID">Department ID</label>
+            <input type="text" id="studentDepartmentID" name="studentDepartmentID" required>
+            <label for="studentLevel">Level</label>
+            <input type="text" id="studentLevel" name="studentLevel" required>
+            <button type="submit">Add Student</button>
+        </form>
+        <div id="students-results"></div>
+    </section>
+
+    <section class="form-section">
+        <h2>Modify Student</h2>
+        <form id="modify-student-form">
+            <label for="modifyStudentID">Student ID</label>
+            <input type="text" id="modifyStudentID" name="modifyStudentID" required>
+            <label for="modifyStudentName">New Name</label>
+            <input type="text" id="modifyStudentName" name="modifyStudentName">
+            <label for="modifyStudentDepartmentID">New Department ID</label>
+            <input type="text" id="modifyStudentDepartmentID" name="modifyStudentDepartmentID">
+            <label for="modifyStudentLevel">New Level</label>
+            <input type="text" id="modifyStudentLevel" name="modifyStudentLevel">
+            <button type="submit">Modify Student</button>
+        </form>
+    </section>
+
+    <section class="form-section">
+        <h2>Delete Student</h2>
+        <form id="delete-student-form">
+            <label for="deleteStudentID">Student ID</label>
+            <input type="text" id="deleteStudentID" name="deleteStudentID" required>
+            <button type="submit">Delete Student</button>
+        </form>
+    </section>
+
+    <section class="form-section">
+           <h2>Display All Data</h2>
+           <!-- Display All Entities Button -->
+           <button id="display-all-btn">Display All Data</button>
+        
+           <!-- Result Div for All Entities -->
+           <div id="students-results"></div>
+           <div id="teachers-results"></div>
+           <div id="courses-results"></div>
+           <div id="enrollments-results"></div>
+           <div id="grades-results"></div>
+           <div id="schedules-results"></div>
+           <div id="faculties-results"></div>
+           <div id="departments-results"></div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>

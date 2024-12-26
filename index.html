@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Management System</title>
+    <style>
+        /* Body and General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #333;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        /* Navigation Bar Styles */
+        nav {
+          
+            background-color: #333;
+            
+        
+            padding: 10px 0;
+            margin-top: 20px;
+                font-size: 25px;
+        }
+
+        
+        
+
+        nav p {
+            font-size: 30px;
+            text-align: center;
+            color: #fff;
+            transition: color 0.3s ease-in-out;
+        }
+        /* Section Layout */
+        .section {
+            padding: 30px 20px;
+            text-align: center;
+            background-color: #fff;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            font-size: 30px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .section p {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 25px;
+        }
+
+        .section a {
+            font-size: 18px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .section a:hover {
+            color: #0056b3;
+        }
+.button-text {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+        /* Button Styles */
+        .section button {
+            padding: 12px 25px;
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+            display: inline-block; /* Ensures the button is displayed as an inline block */
+        }
+
+        .section button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            font-size: 16px;
+        }
+
+        /* Responsive Layout */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 28px;
+            }
+
+            .section h2 {
+                font-size: 24px;
+            }
+
+            .section p {
+                font-size: 16px;
+            }
+
+            .section button {
+                padding: 12px 25px;
+                font-size: 16px;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>University Management System</h1>
+        <p>       </p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+      <p>Welcome to the University Management System.</p>
+    </nav>
+
+    <!-- Section 1: Manage Students -->
+    <div class="section">
+        <h2>Manage Students</h2>
+        <p>Manage student information</p>
+        <a href="student.html" class="button-text">Go to Student Management</a>
+    </div>
+
+    <!-- Section 2: Manage Teachers -->
+    <div class="section">
+        <h2>Manage Teachers</h2>
+        <p>Manage teacher details </p>
+        <a href="teacher.html" class="button-text">Go to Teacher Management</a>
+    </div>
+
+    <!-- Section 3: Manage Courses -->
+    <div class="section">
+        <h2>Manage Courses</h2>
+        <p>Create, update, and delete courses offered by the university.</p>
+        <a href="course.html" class="button-text">Go to Course Management</a>
+    </div>
+
+    <!-- Section 4: Manage Enrollments -->
+    <div class="section">
+        <h2>Manage Enrollments</h2>
+        <p>Manage student enrollments for different courses.</p>
+        <a href="enrollment.html" class="button-text">Go to Enrollment Management</a>
+    </div>
+
+    <!-- Section 5: Manage Grades -->
+    <div class="section">
+        <h2>Manage Grades</h2>
+        <p>Manage grades and academic progress for students.</p>
+        <a href="grade.html" class="button-text">Go to Grade Management</a>
+    </div>
+
+    <!-- Section 6: Manage Schedules -->
+    <div class="section">
+        <h2>Manage Schedules</h2>
+        <p>View and update class schedules for the university.</p>
+        <a href="schedule.html" class="button-text">Go to Schedule Management</a>
+    </div>
+
+    <!-- Section 7: Manage Faculties -->
+    <div class="section">
+        <h2>Manage Faculties</h2>
+        <p>Manage faculty details and assign courses.</p>
+        <a href="faculty.html" class="button-text">Go to Faculty Management</a>
+    </div>
+
+    <!-- Section 8: Manage Departments -->
+    <div class="section">
+        <h2>Manage Departments</h2>
+        <p>Manage departments and assign courses to faculty members.</p>
+        <a href="department.html" class="button-text">Go to Department Management</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 University Management System by OMAR</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Teachers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Manage Teachers</h1>
+    </header>
+
+    <section class="form-section">
+        <h2>Add Teacher</h2>
+        <form id="add-teacher-form">
+            <label for="teacherID">Teacher ID</label>
+            <input type="text" id="teacherID" name="teacherID" required>
+            <label for="teacherName">Teacher Name</label>
+            <input type="text" id="teacherName" name="teacherName" required>
+            <label for="teacherDepartmentID">Department ID</label>
+            <input type="text" id="teacherDepartmentID" name="teacherDepartmentID" required>
+            <button type="submit">Add Teacher</button>
+        </form>
+        <div id="teachers-results"></div>
+    </section>
+
+    <!-- Modify Teacher Section -->
+    <section class="form-section">
+        <h2>Modify Teacher</h2>
+        <form id="modify-teacher-form">
+            <label for="modifyTeacherID">Teacher ID</label>
+            <input type="text" id="modifyTeacherID" name="modifyTeacherID" required>
+            <label for="modifyTeacherName">New Name</label>
+            <input type="text" id="modifyTeacherName" name="modifyTeacherName">
+            <label for="modifyTeacherDepartmentID">New Department ID</label>
+            <input type="text" id="modifyTeacherDepartmentID" name="modifyTeacherDepartmentID">
+            <button type="submit">Modify Teacher</button>
+        </form>
+    </section>
+
+    <!-- Delete Teacher Section -->
+    <section class="form-section">
+        <h2>Delete Teacher</h2>
+        <form id="delete-teacher-form">
+            <label for="deleteTeacherID">Teacher ID</label>
+            <input type="text" id="deleteTeacherID" name="deleteTeacherID" required>
+            <button type="submit">Delete Teacher</button>
+        </form>
+    </section>
+
+    <!-- Display Teachers Section -->
+    <section class="form-section">
+           <h2>Display All Data</h2>
+           <!-- Display All Entities Button -->
+           <button id="display-all-btn">Display All Data</button>
+        
+           <!-- Result Div for All Entities -->
+           <div id="students-results"></div>
+           <div id="teachers-results"></div>
+           <div id="courses-results"></div>
+           <div id="enrollments-results"></div>
+           <div id="grades-results"></div>
+           <div id="schedules-results"></div>
+           <div id="faculties-results"></div>
+           <div id="departments-results"></div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>

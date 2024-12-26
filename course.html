@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Courses</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Manage Courses</h1>
+    </header>
+
+    <section class="form-section">
+        <h2>Add Course</h2>
+        <form id="add-course-form">
+            <label for="courseID">Course ID</label>
+            <input type="text" id="courseID" name="courseID" required>
+            <label for="courseName">Course Name</label>
+            <input type="text" id="courseName" name="courseName" required>
+            <label for="courseDepartmentID">Department ID</label>
+            <input type="text" id="courseDepartmentID" name="courseDepartmentID" required>
+            <label for="courseCredits">Credits</label>
+            <input type="number" id="courseCredits" name="courseCredits" required>
+            <button type="submit">Add Course</button>
+        </form>
+        <div id="courses-results"></div>
+    </section>
+
+    <section class="form-section">
+        <h2>Modify Course</h2>
+        <form id="modify-course-form">
+            <label for="modifyCourseID">Course ID</label>
+            <input type="text" id="modifyCourseID" name="modifyCourseID" required>
+            <label for="modifyCourseName">New Name</label>
+            <input type="text" id="modifyCourseName" name="modifyCourseName">
+            <label for="modifyCourseDepartmentID">New Department ID</label>
+            <input type="text" id="modifyCourseDepartmentID" name="modifyCourseDepartmentID">
+            <label for="modifyCourseCredits">New Credits</label>
+            <input type="number" id="modifyCourseCredits" name="modifyCourseCredits">
+            <button type="submit">Modify Course</button>
+        </form>
+    </section>
+
+    <section class="form-section">
+        <h2>Delete Course</h2>
+        <form id="delete-course-form">
+            <label for="deleteCourseID">Course ID</label>
+            <input type="text" id="deleteCourseID" name="deleteCourseID" required>
+            <button type="submit">Delete Course</button>
+        </form>
+    </section>
+
+    <section class="form-section">
+        <h2>Display Courses</h2>
+        <!-- Display All Entities Button -->
+        <button id="display-all-btn">Display All Data</button>
+        
+        <!-- Result Div for All Entities -->
+        <div id="students-results"></div>
+        <div id="teachers-results"></div>
+        <div id="courses-results"></div>
+        <div id="enrollments-results"></div>
+        <div id="grades-results"></div>
+        <div id="schedules-results"></div>
+        <div id="faculties-results"></div>
+        <div id="departments-results"></div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
